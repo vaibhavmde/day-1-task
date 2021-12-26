@@ -1,0 +1,33 @@
+Question 1 
+Write a blog on Difference between HTTP1.1 vs HTTP2?
+
+Answer
+ HTTP/1.1
+>It was Introduced in 1997
+>It supports connection reuse i.e. for every TCP connection there could be multiple requests and responses
+>The Upgrade header was used to indicate a preference from the client that made it possible to switch to a more preferred protocol if found appropriate by the server.
+>Pipelining the second request is sent before the response to the first is adequately served
+>Content negotiation an exchange between client and server to determine the media type, it also provides the provision to serve different versions of a resource at the same URI
+Cache control used to specify caching policies in both requests and responses	
+
+ HTTP/2
+>It was Introduced in 2015
+>It introduces the concept of a server push where the server anticipates the resources that will be required by the client and pushes them prior to the client making requests.
+>Introduces the concept of multiplexing that interleaves the requests and responses without head-of-line blocking and does so over a single TCP connection.
+>Underlying semantics of HTTP such as headers, status codes remains the same.
+>Security concerns from previous versions will continue to be seen in HTTP/2. However, it is better equipped to deal with them due to new TLS features like connection error of type Inadequate_Security.
+
+Question 2
+Write a blog about objects and its internal representation in Javascript?
+
+Answer
+>objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types, in the form of “key: value” pairs. 
+>Objects are more complex and each object may contain any combination of these primitive data-types as well as reference data-types.
+>var <object-name> = {key1: value1, key2: value2,... keyN: valueN};
+let employee = {name: 'Vaibhav', EID:'784578', Department:'Fullstack Developer',Address:'Nashik'};
+>The key1,key2,keyN are called properties in JavaScript.
+>objectName.property        // employee.name          
+objectName["property”]    // employee['name']
+objectName[expression]   // x = "name"; employee[x]
+
+
